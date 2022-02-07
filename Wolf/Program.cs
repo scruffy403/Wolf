@@ -11,17 +11,16 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            string characterName = "Tom";
-            int characterAge;
-            characterAge = 25;
 
+            // most common data types
+            string phrase = "Wolf academy";
+            char grade = 'B'; // for single character only
+            int age = 30;
+            // for decimal numbers options, from least to most precise are: float, double, decimal
+            double gpa = 3.2;
+            bool isMale = true;
 
-            Console.WriteLine("There once was a man named " + characterName);
-            Console.WriteLine("He was " + characterAge + " years old");
-
-            characterName = "Mike";
-            Console.WriteLine("He really liked the name " + characterName);
-            Console.WriteLine("But he didn't like being " + characterAge);
+            Console.WriteLine("There is a student at " + phrase + ". Their age is " + age + ", their grade is " + grade + ", and their GPA is " + gpa + ".");
 
             Console.ReadLine();
         }
