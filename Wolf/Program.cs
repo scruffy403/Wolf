@@ -11,14 +11,14 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
+            // math operations with int's will return int: 5 / 4 would return 1
+            // to access the more accurate decimal answer convert one to decimal: 5 / 4.0 returns 1.25
+            // Math. to access math methods for more complex operations
 
-            // \n to create a newline "Wolf\nAcademy"
-            // \" to keep a quotation within a string: "Wolf \" Academy" -> Wolf " Academy
+            int number = 6;
+            number--;
 
-            string phrase = "Wolf Academy"; // phrase.Length will give the length of the string
-           
-
-            Console.WriteLine( phrase.Substring(5, 3) );
+            Console.WriteLine(Math.Pow(9, 2));
 
             Console.ReadLine();
         }
