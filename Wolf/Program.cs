@@ -12,15 +12,13 @@ namespace Wolf
         static void Main(string[] args)
         {
 
-            // most common data types
-            string phrase = "Wolf academy";
-            char grade = 'B'; // for single character only
-            int age = 30;
-            // for decimal numbers options, from least to most precise are: float, double, decimal
-            double gpa = 3.2;
-            bool isMale = true;
+            // \n to create a newline "Wolf\nAcademy"
+            // \" to keep a quotation within a string: "Wolf \" Academy" -> Wolf " Academy
 
-            Console.WriteLine("There is a student at " + phrase + ". Their age is " + age + ", their grade is " + grade + ", and their GPA is " + gpa + ".");
+            string phrase = "Wolf Academy"; // phrase.Length will give the length of the string
+           
+
+            Console.WriteLine( phrase.Substring(5, 3) );
 
             Console.ReadLine();
         }
