@@ -11,14 +11,16 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            // math operations with int's will return int: 5 / 4 would return 1
-            // to access the more accurate decimal answer convert one to decimal: 5 / 4.0 returns 1.25
-            // Math. to access math methods for more complex operations
+           
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("What is your age? ");
+            string age = Console.ReadLine();
+            Console.Write("What city were you born in? ");
+            string whereBorn = Console.ReadLine();
 
-            int number = 6;
-            number--;
+            Console.Write("Hello, " + name + "! You are " + age + " years old. " + whereBorn + " is a nice city!");
 
-            Console.WriteLine(Math.Pow(9, 2));
 
             Console.ReadLine();
         }
