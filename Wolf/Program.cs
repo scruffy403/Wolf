@@ -11,16 +11,24 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine(cube(5));
+            bool isMale = false;
+            bool isTall = false;
+            
+            if(isMale && isTall)
+            {
+                Console.WriteLine("You are a tall male.");
+            } else if(isMale && !isTall)
+            {
+                Console.WriteLine("You are not a tall male");
+            } else if(!isMale && isTall)
+            {
+                System.Console.WriteLine("You are not a male. You are tall.");
+            } else
+            {
+                Console.WriteLine("You are not male. You are not tall.");
+            }
             
             Console.ReadLine();
-        }
-
-        static int cube(int number)
-        {
-            int result = number * number * number;
-            return result;
         }
         
     }
