@@ -11,15 +11,20 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
+            string color, pluralNoun, celebrity;
 
-            Console.Write("Enter a number: ");
-            int number1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter another number: ");
-            int number2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
 
-            // to handle decimal numbers set variables to double and use Convert.ToDouble instead
+            Console.Write("Enter a plural noun ");
+            pluralNoun = Console.ReadLine();
 
-            Console.WriteLine(number1 + number2);
+            Console.Write("Enter a celebrity: ");
+            celebrity = Console.ReadLine();
+
+            Console.WriteLine("Roses are " + color);
+            Console.WriteLine(pluralNoun + " are blue");
+            Console.WriteLine("I love " + celebrity);
 
             Console.ReadLine();
         }
