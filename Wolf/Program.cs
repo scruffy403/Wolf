@@ -11,19 +11,15 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            int[] luckyNumbers = { 1, 2, 3, 4, 5, };
-            int[] luckyNumbers2 = { 4, 8, 15, 16, 23, 42 };
-
-            luckyNumbers[1] = 900;
-
-            string[] friends = new string[10]; // if you don't populate the array when you create it you need to specify how many elements it can hold
-            friends[0] = "Donny";
-            friends[1] = "Sip";
-
-            Console.WriteLine(luckyNumbers[1]);
-            Console.WriteLine(luckyNumbers2[2]);
-
+            SayHi("Fresh", 30);
+            SayHi("Jeremy", 65);
+            SayHi("Simba", 42);
             Console.ReadLine();
+        }
+
+        static void SayHi( string name, int age )
+        {
+            Console.WriteLine("Hello, " + name + "!" + " You are " + age + ".");
         }
     }
 }
