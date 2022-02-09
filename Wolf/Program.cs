@@ -11,15 +11,17 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            SayHi("Fresh", 30);
-            SayHi("Jeremy", 65);
-            SayHi("Simba", 42);
+
+            Console.WriteLine(cube(5));
+            
             Console.ReadLine();
         }
 
-        static void SayHi( string name, int age )
+        static int cube(int number)
         {
-            Console.WriteLine("Hello, " + name + "!" + " You are " + age + ".");
+            int result = number * number * number;
+            return result;
         }
+        
     }
 }
