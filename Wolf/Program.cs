@@ -11,24 +11,27 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            bool isMale = false;
-            bool isTall = false;
-            
-            if(isMale && isTall)
+            Console.WriteLine(GetMax(10, 4, 3));
+                        
+            Console.ReadLine();
+        }
+
+        static int GetMax(int number1, int number2, int number3)
+        {
+            int result;
+
+            if(number1 > number2 && number1 > number3)
             {
-                Console.WriteLine("You are a tall male.");
-            } else if(isMale && !isTall)
+                result = number1;
+            } else if (number1 < number2 && number2 > number3)
             {
-                Console.WriteLine("You are not a tall male");
-            } else if(!isMale && isTall)
-            {
-                System.Console.WriteLine("You are not a male. You are tall.");
+                result = number2;
             } else
             {
-                Console.WriteLine("You are not male. You are not tall.");
+                result = number3;
             }
-            
-            Console.ReadLine();
+
+            return result;
         }
         
     }
