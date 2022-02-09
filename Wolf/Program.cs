@@ -11,20 +11,17 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            string color, pluralNoun, celebrity;
+            int[] luckyNumbers = { 1, 2, 3, 4, 5, };
+            int[] luckyNumbers2 = { 4, 8, 15, 16, 23, 42 };
 
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
+            luckyNumbers[1] = 900;
 
-            Console.Write("Enter a plural noun ");
-            pluralNoun = Console.ReadLine();
+            string[] friends = new string[10]; // if you don't populate the array when you create it you need to specify how many elements it can hold
+            friends[0] = "Donny";
+            friends[1] = "Sip";
 
-            Console.Write("Enter a celebrity: ");
-            celebrity = Console.ReadLine();
-
-            Console.WriteLine("Roses are " + color);
-            Console.WriteLine(pluralNoun + " are blue");
-            Console.WriteLine("I love " + celebrity);
+            Console.WriteLine(luckyNumbers[1]);
+            Console.WriteLine(luckyNumbers2[2]);
 
             Console.ReadLine();
         }
