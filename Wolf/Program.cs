@@ -11,16 +11,15 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-           
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            Console.Write("What is your age? ");
-            string age = Console.ReadLine();
-            Console.Write("What city were you born in? ");
-            string whereBorn = Console.ReadLine();
 
-            Console.Write("Hello, " + name + "! You are " + age + " years old. " + whereBorn + " is a nice city!");
+            Console.Write("Enter a number: ");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter another number: ");
+            int number2 = Convert.ToInt32(Console.ReadLine());
 
+            // to handle decimal numbers set variables to double and use Convert.ToDouble instead
+
+            Console.WriteLine(number1 + number2);
 
             Console.ReadLine();
         }
