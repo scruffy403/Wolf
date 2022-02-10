@@ -11,28 +11,35 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(GetMax(10, 4, 3));
-                        
+            Console.Write("Enter a number: ");
+            double number1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the operator: ");
+            string op = Console.ReadLine();
+
+            Console.Write("Enter a second number: ");
+            double number2 = Convert.ToDouble(Console.ReadLine());
+
+            if(op == "+") 
+            {
+                Console.Write(number1 + number2);
+            } else if (op == "-")
+            {
+                Console.Write(number1 - number2);
+            } else if (op == "*" || op == "x" || op == "X")
+            {
+                Console.Write(number1 * number2);
+            } else if(op == "/")
+            {
+                Console.Write(number1 / number2);
+            } else
+            {
+                Console.Write("You have entered an invalid characer. Try again :)");
+            }
+
             Console.ReadLine();
         }
 
-        static int GetMax(int number1, int number2, int number3)
-        {
-            int result;
-
-            if(number1 > number2 && number1 > number3)
-            {
-                result = number1;
-            } else if (number1 < number2 && number2 > number3)
-            {
-                result = number2;
-            } else
-            {
-                result = number3;
-            }
-
-            return result;
-        }
-        
+              
     }
 }
