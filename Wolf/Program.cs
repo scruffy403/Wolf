@@ -11,49 +11,17 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            int number;
-            Console.Write("Enter a number between 1 and 7: ");
-            number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(GetDay(number));
-            
-            Console.ReadLine();
-        }
-
-        static string GetDay(int dayNumber)
-        {
-            string dayName;
-
-            switch (dayNumber)
+            int index = 6;
+            // do/while loop, do portion gets executed before the while condition is checked
+            do
             {
-                case 1: 
-                    dayName = "Sunday";
-                    break;
-                case 2:
-                    dayName = "Monday";
-                    break;
-                case 3:
-                    dayName = "Tuesday";
-                    break;
-                case 4:
-                    dayName = "Wednesday";
-                    break;
-                case 5:
-                    dayName = "Thursday";
-                    break;
-                case 6:
-                    dayName = "Friday";
-                    break;
-                case 7:
-                    dayName = "Saturday";
-                    break;
-                default:
-                    dayName = "Invalid day number!";
-                    break;
-            }
+                Console.WriteLine("The number is: " + index);
+                index++;
+            } while (index <= 5);
 
-            return dayName;
-        }
 
-              
+
+            Console.ReadLine();
+        }              
     }
 }
