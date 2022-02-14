@@ -16,8 +16,8 @@ namespace Wolf
             int guessCount = 0;
             int guessLimit = 3;
             bool outOfGuesses = false;
-
-            while (guess != secretWord && !outOfGuesses)
+                       
+            do
             {
                 if (guessCount < guessLimit)
                 {
@@ -29,16 +29,17 @@ namespace Wolf
                 {
                     outOfGuesses = true;
                 }
-                
+
+                if (outOfGuesses)
+                {
+                    Console.Write("You lose!");
+                }
+                else
+                {
+                    Console.Write("You win!");
+                }
             }
-            if (outOfGuesses)
-            {
-                Console.Write("You lose!");
-            }
-            else
-            {
-                Console.Write("You win!");
-            }
+            while (guess != secretWord && !outOfGuesses);
 
             Console.ReadLine();
         }              
