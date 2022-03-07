@@ -11,15 +11,25 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            int[,] numberGrid = {
-                {1, 2},
-                {3, 4},
-                {4, 5},
-            };
+            try
+            {
+                Console.Write("Enter a number: ");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter anohter number: ");
+                int number2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(numberGrid[1,0]);
+                Console.WriteLine(number1 / number2);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
             
-            Console.ReadLine();
         }     
       
     }
