@@ -11,21 +11,16 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
+            int[,] numberGrid = {
+                {1, 2},
+                {3, 4},
+                {4, 5},
+            };
 
-            Console.WriteLine(GetPower(4, 3));
+            Console.WriteLine(numberGrid[1,0]);
+            
             Console.ReadLine();
-        }
-        
-        static int GetPower(int baseNumber, int powerNumber)
-        {
-            int result = 1;
-
-            for (int i = 0; i < powerNumber; i++)
-            {
-                result = result * baseNumber;
-            }
-
-            return result;
-        }
+        }     
+      
     }
 }
