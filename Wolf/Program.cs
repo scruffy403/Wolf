@@ -11,35 +11,20 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            string secretWord = "giraffe";
-            string guess = "";
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outOfGuesses = false;
-                       
-            do
-            {
-                if (guessCount < guessLimit)
-                {
-                    Console.Write("Enter guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                }
-                else
-                {
-                    outOfGuesses = true;
-                }
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
 
-                if (outOfGuesses)
-                {
-                    Console.Write("You lose!");
-                }
-                else
-                {
-                    Console.Write("You win!");
-                }
+            for (int i = 0; i <  luckyNumbers.Length; i++)
+            {
+                Console.Write("The number is: ");
+                Console.WriteLine(luckyNumbers[i]);
             }
-            while (guess != secretWord && !outOfGuesses);
+
+            for (int j = 10; j <= 40; j+=5) 
+
+            {
+                Console.Write("These numbers skip by 5, see: ");
+                Console.WriteLine(j);
+            }
 
             Console.ReadLine();
         }              
