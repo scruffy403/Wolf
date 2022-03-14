@@ -11,25 +11,19 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Console.Write("Enter a number: ");
-                int number1 = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Enter anohter number: ");
-                int number2 = Convert.ToInt32(Console.ReadLine());
+            Book book1 = new Book();
+            book1.title = "Harry Potter";
+            book1.author = "JK Rowling";
+            book1.pages = 400;
 
-                Console.WriteLine(number1 / number2);
-            }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            catch (FormatException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            Book book2 = new Book();
+            book2.title = "Lord of the Rings";
+            book2.author = "Tolkien";
+            book2.pages = 700;
 
-            
+            Console.WriteLine("The book title is: " + book2.title + ". The author is: " + book2.author +".");
+
+            Console.ReadLine();
         }     
       
     }
