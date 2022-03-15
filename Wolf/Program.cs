@@ -11,14 +11,11 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            Book book1 = new Book("Harry Potter", "JK Rowling", 400);
-                      
+            Student student1 = new Student("Jim", "Business", 2.8);
+            Student student2 = new Student("Pam", "Art", 3.6);
 
-            Book book2 = new Book("Lord of the Rings", "Tolkien", 700);
-            
-
-            Console.WriteLine("Here are the details about book 1. Title: " + book1.title + ". The author is: " + book1.author +". and it is " + book1.pages + " pages long.");
-            Console.WriteLine("Here are the details about book 1. Title: " + book2.title + ". The author is: " + book2.author + ". and it is " + book2.pages + "  pages long.");
+            Console.WriteLine(student1.DoesStudentHaveHonors());
+            Console.WriteLine(student2.DoesStudentHaveHonors());
 
             Console.ReadLine();
         }     
