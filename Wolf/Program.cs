@@ -11,10 +11,13 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "Mature");
-            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Console.WriteLine(Song.songCount);
+            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+            Console.WriteLine(Song.songCount);
 
-            Console.WriteLine(avengers.Rating);
+            Console.WriteLine(holiday.getSongCount()); // use this to access the static attribute from the object
+            Console.WriteLine(kashmir.artist);
 
             Console.ReadLine();
         }     
