@@ -11,11 +11,10 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            Student student1 = new Student("Jim", "Business", 2.8);
-            Student student2 = new Student("Pam", "Art", 3.6);
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "Mature");
+            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
 
-            Console.WriteLine(student1.DoesStudentHaveHonors());
-            Console.WriteLine(student2.DoesStudentHaveHonors());
+            Console.WriteLine(avengers.Rating);
 
             Console.ReadLine();
         }     
