@@ -11,13 +11,9 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            Song holiday = new Song("Holiday", "Green Day", 200);
-            Console.WriteLine(Song.songCount);
-            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
-            Console.WriteLine(Song.songCount);
+            UsefulTools.SayHi("John");
 
-            Console.WriteLine(holiday.getSongCount()); // use this to access the static attribute from the object
-            Console.WriteLine(kashmir.artist);
+            UsefulTools tools = new UsefulTools();
 
             Console.ReadLine();
         }     
