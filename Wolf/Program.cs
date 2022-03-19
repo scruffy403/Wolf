@@ -11,9 +11,11 @@ namespace Wolf
     {
         static void Main(string[] args)
         {
-            UsefulTools.SayHi("John");
+            Chef chef = new Chef();
+            chef.MakeSpecialDish();
 
-            UsefulTools tools = new UsefulTools();
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeSpecialDish();
 
             Console.ReadLine();
         }     
